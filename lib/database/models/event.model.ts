@@ -4,13 +4,13 @@ import { Schema, model, models } from 'mongoose';
 export interface IEvent extends Document {
   _id: string;
   title: string;
-  description?: String;
+  description?: string;
   loacation?: string;
   craetedAt?: Date;
   imageUrl: string;
   startDateTime: Date;
   endDateTime: Date;
-  price?: string;
+  price: string;
   isFree: boolean;
   url?: string;
   category: { _id: string; name: string };
